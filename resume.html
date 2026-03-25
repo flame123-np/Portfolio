@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hoài Anh - Portfolio Resume</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#e7e8e8",
+              "on-tertiary": "#fff1df",
+              "on-background": "#2d2f2f",
+              "surface-tint": "#6e5a00",
+              "outline-variant": "#acadad",
+              "secondary-fixed-dim": "#b2d7e6",
+              "error-container": "#f95630",
+              "background": "#f6f6f6",
+              "error-dim": "#b92902",
+              "inverse-on-surface": "#9c9d9d",
+              "inverse-primary": "#ffd740",
+              "on-secondary-fixed": "#1d424e",
+              "tertiary": "#7b5400",
+              "surface-container-lowest": "#ffffff",
+              "secondary-container": "#c0e6f4",
+              "tertiary-fixed-dim": "#eda600",
+              "on-error": "#ffefec",
+              "on-primary-fixed-variant": "#685400",
+              "on-tertiary-fixed": "#382400",
+              "primary": "#2c5a43",
+              "primary-dim": "#214b3a",
+              "on-surface-variant": "#5a5c5c",
+              "surface": "#f6f6f6",
+              "primary-container": "#2c5a43",
+              "on-tertiary-container": "#523700",
+              "on-tertiary-fixed-variant": "#5e4000",
+              "surface-variant": "#dbdddd",
+              "on-surface": "#2d2f2f",
+              "on-primary": "#f0f0f0",
+              "secondary-dim": "#214b3a",
+              "tertiary-dim": "#173b2f",
+              "surface-container-highest": "#f9f9f9",
+              "inverse-surface": "#0c0f0f",
+              "on-secondary-container": "#315561",
+              "surface-bright": "#f6f6f6",
+              "on-primary-fixed": "#463900",
+              "outline": "#767777",
+              "primary-fixed": "#ffd740",
+              "surface-container-low": "#f0f1f1",
+              "surface-container-high": "#e1e3e3",
+              "on-secondary": "#e1f6ff",
+              "secondary": "#3d606d",
+              "on-secondary-fixed-variant": "#3b5f6b",
+              "secondary-fixed": "#c0e6f4",
+              "error": "#b02500",
+              "primary-fixed-dim": "#f0c931",
+              "tertiary-fixed": "#feb300",
+              "on-error-container": "#520c00",
+              "tertiary-container": "#feb300",
+              "on-primary-container": "#5c4b00",
+              "surface-dim": "#d2d5d5"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+      }
+      .grainy-bg {
+        position: relative
+      }
+      .grainy-bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.03;
+        pointer-events: none;
+        background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAvin4Mr2i5t7q6t6bAkQ4fNJHsta9lyaUHWQegMMNJmSG-qVhlQ8Vo4CoiEd8JrGp19l3NgHwFwWAhl7sQYcrP07mGef8JSejtMJGGhjAFMxASmcMPnIr0uNLaxSbncX4jXxtMr_ijoK3svlfs34enfhYPNv9bdk4PfxibSPtzrTB3DxsKLxaWCw6e_-Mpf-ytHNdtZpbKAd6Rb_duyM73TfkV7C1qJL1oYlE5vwWzALbHHL4tDxlXaxnS5hWMMiFB2otaTM9tI-PQ)
+      }
+      .timeline-dot::before {
+        content: "";
+        position: absolute;
+        left: -1.4rem;
+        top: 0.4rem;
+        width: 10px;
+        height: 10px;
+        background: #3d606d;
+        border-radius: 50%
+      }
+
+      /* A4 Dimensions and Layout */
+      :root {
+        --a4-width: 210mm;
+        --a4-height: 297mm;
+      }
+
+      body {
+        background: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      .a4-page {
+        width: var(--a4-width);
+        height: var(--a4-height);
+        background: #ffffff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        display: grid;
+        grid-template-columns: 34% 66%;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+
+      /* Match index palette: green left, cream right with side-specific text colors */
+      .sidebar {
+        background: #2c5a43 !important;
+        color: #ffffff;
+        width: 100%;
+      }
+
+      .sidebar,
+      .sidebar .text-secondary,
+      .sidebar .text-on-surface,
+      .sidebar .text-on-surface-variant,
+      .sidebar .text-secondary\/80,
+      .sidebar .material-symbols-outlined,
+      .sidebar h1,
+      .sidebar h2,
+      .sidebar h3,
+      .sidebar p,
+      .sidebar li,
+      .sidebar span {
+        color: #ffffff !important;
+      }
+
+      .sidebar .border-secondary {
+        border-color: #e6ddc9 !important;
+      }
+
+      .main-content {
+        background: #efe8d8 !important;
+        color: #111111;
+        width: 100%;
+      }
+
+      .main-content,
+      .main-content .text-on-surface,
+      .main-content .text-on-surface-variant,
+      .main-content .text-secondary,
+      .main-content h1,
+      .main-content h2,
+      .main-content h3,
+      .main-content p,
+      .main-content li,
+      .main-content span {
+        color: #111111 !important;
+      }
+
+      .main-content .bg-primary-container {
+        background-color: #214b3a !important;
+        color: #ffffff !important;
+      }
+
+      .main-content .bg-primary-container .material-symbols-outlined {
+        color: #ffffff !important;
+      }
+
+      .main-content .border-secondary\/20 {
+        border-color: rgba(33, 75, 58, 0.22) !important;
+      }
+
+      .back-home {
+        position: fixed;
+        top: 16px;
+        left: 16px;
+        width: 46px;
+        height: 46px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        background: #2c5a43;
+        color: #ffffff;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        transition: transform 160ms ease, background 160ms ease;
+      }
+
+      .back-home:hover {
+        transform: translateY(-1px);
+        background: #214b3a;
+      }
+
+      .back-home:focus-visible {
+        outline: 2px solid #ffffff;
+        outline-offset: 2px;
+      }
+      
+      .pdf-controls {
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+      }
+      
+      .pdf-btn {
+        padding: 10px 20px;
+        background: #2c5a43;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 200ms ease;
+      }
+      
+      .pdf-btn:hover {
+        background: #214b3a;
+      }
+      
+      @media (max-width: 800px) {
+        .a4-page {
+          grid-template-columns: 1fr;
+          height: auto;
+        }
+
+        .pdf-controls {
+          flex-direction: column;
+        }
+      }
+
+      @media print {
+        * {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+
+        .pdf-controls {
+          display: none !important;
+        }
+
+        .back-home {
+          display: none !important;
+        }
+
+        html,
+        body {
+          width: 210mm;
+          height: 297mm;
+          overflow: hidden;
+        }
+
+        body {
+          background: none;
+          display: block;
+          margin: 0;
+          padding: 0;
+          min-height: auto;
+        }
+
+        .a4-page {
+          width: 210mm;
+          height: 297mm;
+          grid-template-columns: 34% 66%;
+          box-shadow: none;
+          margin: 0;
+          page-break-after: avoid;
+          break-after: avoid-page;
+          page-break-inside: avoid;
+          break-inside: avoid-page;
+        }
+
+        .sidebar {
+          background-color: #2c5a43 !important;
+          background-image: none !important;
+        }
+
+        .main-content {
+          background: #efe8d8 !important;
+        }
+
+        @page {
+          size: A4;
+          margin: 0;
+        }
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<a class="back-home" href="index.html" aria-label="Back to home page">
+  <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+</a>
+<div class="pdf-controls">
+  <button class="pdf-btn" onclick="downloadPDF()">📥 Download as PDF</button>
+  <button class="pdf-btn" onclick="window.print()" style="background: #214b3a;">🖨️ Print</button>
+</div>
+<div class="a4-page" id="resumePage">
+<!-- SIDEBAR (Left Column) -->
+<aside class="sidebar bg-primary-container grainy-bg flex flex-col py-10 px-6 shrink-0 relative h-full">
+<div class="flex flex-col items-center mb-8">
+<div class="w-36 h-36 rounded-full border-4 border-secondary overflow-hidden mb-4 bg-white flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Creative hand-drawn style illustration portrait of a woman with a yellow beret, stylized artistic line art aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvymk1012a_vtY0Ye7xDhWLIzDeb_TMUgvUdTRmX-J6ylc5CUbYgvkdadlpOwySRvTpYPWiKjqO0AfQ1yQ2xfy6Yg7OUbj8W_2TadvaM0pc4f4y5A8E8izAviJF96tgc2iSi9isEjOj9tkU6n6cn5GXlNHE_TEoHyA7cZhZ0K0lvrqvIEdetICUSSdOtkLONf8xRiEjZs_93Ix-JklvWPam_xZMcdZkbcwZhqUk3nw8mBBD-l13W0_08C9iAXQv4YJ2Kp9jjuokHAv"/>
+</div>
+<h1 class="font-headline text-2xl font-black text-secondary tracking-tighter text-center uppercase">NUTTAPHAT YUENYONG</h1>
+<p class="font-label text-[10px] font-bold tracking-[0.2em] text-secondary/80 mt-1 uppercase">BUSINESS ANALYST INTERN</p>
+</div>
+<!-- Profile Section -->
+<section class="mb-6">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">person</span>
+<h2 class="font-label text-xs font-extrabold uppercase tracking-widest text-secondary">Profile</h2>
+</div>
+<ul class="space-y-2 text-secondary text-xs font-medium">
+<li class="flex items-start gap-3">
+<span class="opacity-60">Date of Birth:</span>
+<span>October 28, 2002</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="opacity-60">Gender:</span>
+<span>Male</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="opacity-60">Position:</span>
+<span>Business Analyst Intern</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="opacity-60">Address:</span>
+<span class="leading-tight">9/1 Moo 11, Khlong Preng, Mueang, Chachoengsao 24000</span>
+</li>
+</ul>
+</section>
+<!-- Contact Section -->
+<section class="mb-6">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">contact_page</span>
+<h2 class="font-label text-xs font-extrabold uppercase tracking-widest text-secondary">Contact</h2>
+</div>
+<ul class="space-y-2 text-secondary text-xs font-medium">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm">call</span>
+<span>099-2844585</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm">mail</span>
+<span>nuttaputza123@gmail.com</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm">public</span>
+<span>GitHub: flame123-np</span>
+</li>
+</ul>
+</section>
+<!-- Interests Section -->
+<section class="mb-6">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">stars</span>
+<h2 class="font-label text-xs font-extrabold uppercase tracking-widest text-secondary">Interests</h2>
+</div>
+<div class="flex flex-wrap gap-4 text-secondary">
+<span class="material-symbols-outlined text-xl" title="Data Analysis">bar_chart</span>
+<span class="material-symbols-outlined text-xl" title="System Design">design_services</span>
+<span class="material-symbols-outlined text-xl" title="Team Communication">groups</span>
+<span class="material-symbols-outlined text-xl" title="Learning New Technologies">rocket_launch</span>
+</div>
+</section>
+<!-- Education Section -->
+<section>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">school</span>
+<h2 class="font-label text-xs font-extrabold uppercase tracking-widest text-secondary">Education</h2>
+</div>
+<div class="space-y-2 text-[10px] font-medium">
+  <p class="leading-tight">Kasetsart University</p>
+  <p class="leading-tight">Faculty of Information Technology</p>
+  <p class="leading-tight">2023 - Expected Graduation 2026</p>
+</div>
+</section>
+</aside>
+<!-- MAIN CONTENT (Right Column) -->
+<main class="main-content bg-surface-container-lowest p-10 h-full overflow-hidden">
+<!-- Introduction -->
+<header class="mb-10">
+<h1 class="font-headline text-5xl font-black text-primary-container mb-4">HELLO!</h1>
+<div class="max-w-xl text-on-surface leading-snug text-sm">
+<p class="mb-3">
+                        I am an Information Technology student at Kasetsart University with a strong interest in Business Analysis.
+                    </p>
+<p>
+                        I am skilled in gathering and analyzing user requirements, designing processes, and communicating effectively with development teams. I am detail-oriented, responsible, and eager to learn new skills to contribute value to the organization.
+                    </p>
+</div>
+</header>
+<!-- Experience Section -->
+<section class="mb-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="w-10 h-10 bg-primary-container flex items-center justify-center rounded-full text-secondary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">work</span>
+</span>
+<h2 class="font-headline text-xl font-black text-secondary uppercase tracking-tight">PROJECTS / RELEVANT EXPERIENCE</h2>
+</div>
+<div class="ml-5 border-l-2 border-secondary/20 pl-6 space-y-6">
+<div class="relative timeline-dot">
+<span class="font-headline text-sm font-bold text-secondary">2024</span>
+<h3 class="font-bold text-base mt-0.5">System Analysis Project</h3>
+<p class="text-on-surface-variant text-xs mt-1">Designed Use Case and ER Diagram for a restaurant booking system, and collaborated with team members to align user requirements with system design.</p>
+</div>
+<div class="relative timeline-dot">
+<span class="font-headline text-sm font-bold text-secondary">2025</span>
+<h3 class="font-bold text-base mt-0.5">Data Visualization Project</h3>
+<p class="text-on-surface-variant text-xs mt-1">Analyzed sales data and created dashboards using Excel and Power BI, then presented findings to team members and instructors.</p>
+</div>
+<div class="relative timeline-dot">
+<span class="font-headline text-sm font-bold text-secondary">University Activities</span>
+<h3 class="font-bold text-base mt-0.5">Team Collaboration & Reporting</h3>
+<p class="text-on-surface-variant text-xs mt-1">Worked in teams to manage data and present reports, strengthening communication and collaboration skills.</p>
+</div>
+</div>
+</section>
+<!-- Abilities Section -->
+<section class="mb-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="w-10 h-10 bg-primary-container flex items-center justify-center rounded-full text-secondary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">palette</span>
+</span>
+<h2 class="font-headline text-xl font-black text-secondary uppercase tracking-tight">SKILLS</h2>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-2xl">description</span>
+</div>
+<span class="font-bold text-[9px] text-secondary uppercase tracking-wider">Requirement Analysis & Documentation</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-2xl">account_tree</span>
+</div>
+<span class="font-bold text-[9px] text-secondary uppercase tracking-wider">Process Modeling (Flowchart, BPMN)</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-2xl">analytics</span>
+</div>
+<span class="font-bold text-[9px] text-secondary uppercase tracking-wider">Data Analysis & Visualization</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-2xl">groups</span>
+</div>
+<span class="font-bold text-[9px] text-secondary uppercase tracking-wider">Communication & Team Collaboration</span>
+</div>
+</div>
+</section>
+<!-- Software Skills Section -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="w-10 h-10 bg-primary-container flex items-center justify-center rounded-full text-secondary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">terminal</span>
+</span>
+<h2 class="font-headline text-xl font-black text-secondary uppercase tracking-tight">SOFTWARE SKILLS</h2>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="flex flex-col items-center">
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full -rotate-90">
+<circle class="text-primary-container/20" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-primary-container" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="18" stroke-width="4"></circle>
+</svg>
+<span class="font-headline text-sm font-extrabold text-secondary">EX</span>
+</div>
+<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">Microsoft Excel</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full -rotate-90">
+<circle class="text-primary-container/20" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-primary-container" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="35" stroke-width="4"></circle>
+</svg>
+<span class="font-headline text-sm font-extrabold text-secondary">PBI</span>
+</div>
+<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">Power BI</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full -rotate-90">
+<circle class="text-primary-container/20" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-primary-container" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="70" stroke-width="4"></circle>
+</svg>
+<span class="font-headline text-sm font-extrabold text-secondary">SQL</span>
+</div>
+<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">SQL (Basic)</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full -rotate-90">
+<circle class="text-primary-container/20" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-primary-container" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="105" stroke-width="4"></circle>
+</svg>
+<span class="font-headline text-sm font-extrabold text-secondary">JTG</span>
+</div>
+<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">Jira, Trello, GitHub</p>
+</div>
+</div>
+</section>
+</main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+function downloadPDF() {
+  const element = document.getElementById('resumePage');
+  const opt = {
+    margin: 0,
+    filename: 'Resume_Nuttaphat_Yuenyong.pdf',
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { format: 'a4', orientation: 'portrait' }
+  };
+  html2pdf().set(opt).from(element).save();
+}
+</script>
+</body>
+</html>
