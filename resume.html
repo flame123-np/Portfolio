@@ -139,6 +139,12 @@
         background: #2c5a43 !important;
         color: #ffffff;
         width: 100%;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 1rem;
+        padding-bottom: 1.25rem;
       }
 
       .sidebar,
@@ -192,6 +198,21 @@
         border-color: rgba(33, 75, 58, 0.22) !important;
       }
 
+      .hackerrank-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 999px;
+        background: #0c5da5;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 0.7rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
       .back-home {
         position: fixed;
         top: 16px;
@@ -219,7 +240,7 @@
         outline: 2px solid #ffffff;
         outline-offset: 2px;
       }
-      
+
       .pdf-controls {
         margin-bottom: 20px;
         display: flex;
@@ -322,8 +343,8 @@
 <!-- SIDEBAR (Left Column) -->
 <aside class="sidebar bg-primary-container grainy-bg flex flex-col py-10 px-6 shrink-0 relative h-full">
 <div class="flex flex-col items-center mb-8">
-<div class="w-36 h-36 rounded-full border-4 border-secondary overflow-hidden mb-4 bg-white flex items-center justify-center">
-<img class="w-full h-full object-cover" data-alt="Creative hand-drawn style illustration portrait of a woman with a yellow beret, stylized artistic line art aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvymk1012a_vtY0Ye7xDhWLIzDeb_TMUgvUdTRmX-J6ylc5CUbYgvkdadlpOwySRvTpYPWiKjqO0AfQ1yQ2xfy6Yg7OUbj8W_2TadvaM0pc4f4y5A8E8izAviJF96tgc2iSi9isEjOj9tkU6n6cn5GXlNHE_TEoHyA7cZhZ0K0lvrqvIEdetICUSSdOtkLONf8xRiEjZs_93Ix-JklvWPam_xZMcdZkbcwZhqUk3nw8mBBD-l13W0_08C9iAXQv4YJ2Kp9jjuokHAv"/>
+<div class="w-36 h-36 rounded-full border-4 border-secondary overflow-hidden bg-white flex items-center justify-center">
+<img class="w-full h-full object-cover" alt="Profile portrait" src="profile1.jpeg"/>
 </div>
 <h1 class="font-headline text-2xl font-black text-secondary tracking-tighter text-center uppercase">NUTTAPHAT YUENYONG</h1>
 <p class="font-label text-[10px] font-bold tracking-[0.2em] text-secondary/80 mt-1 uppercase">BUSINESS ANALYST INTERN</p>
@@ -423,20 +444,21 @@
 <h2 class="font-headline text-xl font-black text-secondary uppercase tracking-tight">PROJECTS / RELEVANT EXPERIENCE</h2>
 </div>
 <div class="ml-5 border-l-2 border-secondary/20 pl-6 space-y-6">
+
 <div class="relative timeline-dot">
-<span class="font-headline text-sm font-bold text-secondary">2024</span>
+<span class="font-headline text-sm font-bold text-secondary">2025</span>
+<h3 class="font-bold text-base mt-0.5">Web Cinema</h3>
+<p class="text-on-surface-variant text-xs mt-1">Created an online cinema booking demo website featuring seat selection, pricing, and mobile-first layout.</p>
+</div>
+<div class="relative timeline-dot">
+<span class="font-headline text-sm font-bold text-secondary">2025</span>
 <h3 class="font-bold text-base mt-0.5">System Analysis Project</h3>
-<p class="text-on-surface-variant text-xs mt-1">Designed Use Case and ER Diagram for a restaurant booking system, and collaborated with team members to align user requirements with system design.</p>
+<p class="text-on-surface-variant text-xs mt-1">Designed use cases and ER diagrams for a restaurant booking system with requirements gathering and stakeholder alignment.</p>
 </div>
 <div class="relative timeline-dot">
 <span class="font-headline text-sm font-bold text-secondary">2025</span>
 <h3 class="font-bold text-base mt-0.5">Data Visualization Project</h3>
-<p class="text-on-surface-variant text-xs mt-1">Analyzed sales data and created dashboards using Excel and Power BI, then presented findings to team members and instructors.</p>
-</div>
-<div class="relative timeline-dot">
-<span class="font-headline text-sm font-bold text-secondary">University Activities</span>
-<h3 class="font-bold text-base mt-0.5">Team Collaboration & Reporting</h3>
-<p class="text-on-surface-variant text-xs mt-1">Worked in teams to manage data and present reports, strengthening communication and collaboration skills.</p>
+<p class="text-on-surface-variant text-xs mt-1">Analyzed sales data and implemented dashboards with Excel and Power BI for actionable management insights.</p>
 </div>
 </div>
 </section>
@@ -485,44 +507,20 @@
 </div>
 <div class="grid grid-cols-4 gap-4">
 <div class="flex flex-col items-center">
-<div class="relative w-16 h-16 flex items-center justify-center">
-<svg class="absolute inset-0 w-full h-full -rotate-90">
-<circle class="text-primary-container/20" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
-<circle class="text-primary-container" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="18" stroke-width="4"></circle>
-</svg>
-<span class="font-headline text-sm font-extrabold text-secondary">EX</span>
-</div>
-<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">Microsoft Excel</p>
+<img class="w-14 h-14" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL Logo" />
+<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">SQL (Intermediate)</p>
 </div>
 <div class="flex flex-col items-center">
-<div class="relative w-16 h-16 flex items-center justify-center">
-<svg class="absolute inset-0 w-full h-full -rotate-90">
-<circle class="text-primary-container/20" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
-<circle class="text-primary-container" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="35" stroke-width="4"></circle>
-</svg>
-<span class="font-headline text-sm font-extrabold text-secondary">PBI</span>
-</div>
-<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">Power BI</p>
+<img class="w-14 h-14" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Logo" />
+<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">Node (Basic)</p>
 </div>
 <div class="flex flex-col items-center">
-<div class="relative w-16 h-16 flex items-center justify-center">
-<svg class="absolute inset-0 w-full h-full -rotate-90">
-<circle class="text-primary-container/20" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
-<circle class="text-primary-container" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="70" stroke-width="4"></circle>
-</svg>
-<span class="font-headline text-sm font-extrabold text-secondary">SQL</span>
-</div>
-<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">SQL (Basic)</p>
+<img class="w-14 h-14" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS Logo" />
+<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">CSS (Basic)</p>
 </div>
 <div class="flex flex-col items-center">
-<div class="relative w-16 h-16 flex items-center justify-center">
-<svg class="absolute inset-0 w-full h-full -rotate-90">
-<circle class="text-primary-container/20" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
-<circle class="text-primary-container" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="105" stroke-width="4"></circle>
-</svg>
-<span class="font-headline text-sm font-extrabold text-secondary">JTG</span>
-</div>
-<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">Jira, Trello, GitHub</p>
+<img class="w-14 h-14" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" />
+<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">JavaScript (Basic)</p>
 </div>
 </div>
 </section>

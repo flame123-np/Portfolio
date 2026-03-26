@@ -797,8 +797,14 @@ button:focus-visible {
   filter: saturate(1.1) contrast(1.06);
 }
 
+..project-card:hover h1,
+.project-card:hover h2,
 .project-card:hover h3,
-.project-card:focus-within h3 {
+.project-card:hover h4,
+.project-card:focus-within h1,
+.project-card:focus-within h2,
+.project-card:focus-within h3,
+.project-card:focus-within h4 {
   color: #0f131c;
 }
 
@@ -808,11 +814,15 @@ button:focus-visible {
   color: #4a2d00;
 }
 
-.project-card h3 {
+.project-card h1,
+.project-card h2,
+.project-card h3,
+.project-card h4 {
   margin: 0.7rem 0 0.2rem;
   font-family: "Manrope", sans-serif;
   font-size: 1.02rem;
   color: #1c1d22;
+  text-align: left;
 }
 
 .project-card p {
