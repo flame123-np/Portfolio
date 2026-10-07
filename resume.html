@@ -1,545 +1,423 @@
 <!DOCTYPE html>
-
-<html lang="vi"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Hoài Anh - Portfolio Resume</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "surface-container": "#e7e8e8",
-              "on-tertiary": "#fff1df",
-              "on-background": "#2d2f2f",
-              "surface-tint": "#6e5a00",
-              "outline-variant": "#acadad",
-              "secondary-fixed-dim": "#b2d7e6",
-              "error-container": "#f95630",
-              "background": "#f6f6f6",
-              "error-dim": "#b92902",
-              "inverse-on-surface": "#9c9d9d",
-              "inverse-primary": "#ffd740",
-              "on-secondary-fixed": "#1d424e",
-              "tertiary": "#7b5400",
-              "surface-container-lowest": "#ffffff",
-              "secondary-container": "#c0e6f4",
-              "tertiary-fixed-dim": "#eda600",
-              "on-error": "#ffefec",
-              "on-primary-fixed-variant": "#685400",
-              "on-tertiary-fixed": "#382400",
-              "primary": "#2c5a43",
-              "primary-dim": "#214b3a",
-              "on-surface-variant": "#5a5c5c",
-              "surface": "#f6f6f6",
-              "primary-container": "#2c5a43",
-              "on-tertiary-container": "#523700",
-              "on-tertiary-fixed-variant": "#5e4000",
-              "surface-variant": "#dbdddd",
-              "on-surface": "#2d2f2f",
-              "on-primary": "#f0f0f0",
-              "secondary-dim": "#214b3a",
-              "tertiary-dim": "#173b2f",
-              "surface-container-highest": "#f9f9f9",
-              "inverse-surface": "#0c0f0f",
-              "on-secondary-container": "#315561",
-              "surface-bright": "#f6f6f6",
-              "on-primary-fixed": "#463900",
-              "outline": "#767777",
-              "primary-fixed": "#ffd740",
-              "surface-container-low": "#f0f1f1",
-              "surface-container-high": "#e1e3e3",
-              "on-secondary": "#e1f6ff",
-              "secondary": "#3d606d",
-              "on-secondary-fixed-variant": "#3b5f6b",
-              "secondary-fixed": "#c0e6f4",
-              "error": "#b02500",
-              "primary-fixed-dim": "#f0c931",
-              "tertiary-fixed": "#feb300",
-              "on-error-container": "#520c00",
-              "tertiary-container": "#feb300",
-              "on-primary-container": "#5c4b00",
-              "surface-dim": "#d2d5d5"
-            },
-            fontFamily: {
-              "headline": ["Plus Jakarta Sans"],
-              "body": ["Manrope"],
-              "label": ["Manrope"]
-            },
-            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-          },
-        },
-      }
-    </script>
-<style>
-      .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
-      }
-      .grainy-bg {
-        position: relative
-      }
-      .grainy-bg::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.03;
-        pointer-events: none;
-        background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAvin4Mr2i5t7q6t6bAkQ4fNJHsta9lyaUHWQegMMNJmSG-qVhlQ8Vo4CoiEd8JrGp19l3NgHwFwWAhl7sQYcrP07mGef8JSejtMJGGhjAFMxASmcMPnIr0uNLaxSbncX4jXxtMr_ijoK3svlfs34enfhYPNv9bdk4PfxibSPtzrTB3DxsKLxaWCw6e_-Mpf-ytHNdtZpbKAd6Rb_duyM73TfkV7C1qJL1oYlE5vwWzALbHHL4tDxlXaxnS5hWMMiFB2otaTM9tI-PQ)
-      }
-      .timeline-dot::before {
-        content: "";
-        position: absolute;
-        left: -1.4rem;
-        top: 0.4rem;
-        width: 10px;
-        height: 10px;
-        background: #3d606d;
-        border-radius: 50%
-      }
-
-      /* A4 Dimensions and Layout */
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuttaphat Yuenyong — Resume</title>
+    <meta name="description" content="Resume of Nuttaphat Yuenyong, Business Analyst Intern candidate, Kasetsart University." />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
       :root {
-        --a4-width: 210mm;
-        --a4-height: 297mm;
+        --green: #1f4d3a;
+        --green-dark: #173b2d;
+        --gold: #e3a52b;
+        --cream: #f5f0e6;
+        --ink: #16211c;
+        --muted: #3d4843;
+        --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+
+      * {
+        box-sizing: border-box;
       }
 
       body {
-        background: #f5f5f5;
         margin: 0;
-        padding: 0;
+        padding: 24px 16px 48px;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: "Manrope", system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .toolbar {
+        max-width: 794px;
+        margin: 0 auto 20px;
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
-        min-height: 100vh;
-        flex-direction: column;
+        justify-content: space-between;
+        gap: 12px;
       }
 
-      .a4-page {
-        width: var(--a4-width);
-        height: var(--a4-height);
-        background: #ffffff;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        display: grid;
-        grid-template-columns: 34% 66%;
-        overflow: hidden;
-        position: relative;
-        box-sizing: border-box;
-        margin-bottom: 20px;
-      }
-
-      /* Match index palette: green left, cream right with side-specific text colors */
-      .sidebar {
-        background: #2c5a43 !important;
-        color: #ffffff;
-        width: 100%;
-        display: flex !important;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
-        gap: 1rem;
-        padding-bottom: 1.25rem;
-      }
-
-      .sidebar,
-      .sidebar .text-secondary,
-      .sidebar .text-on-surface,
-      .sidebar .text-on-surface-variant,
-      .sidebar .text-secondary\/80,
-      .sidebar .material-symbols-outlined,
-      .sidebar h1,
-      .sidebar h2,
-      .sidebar h3,
-      .sidebar p,
-      .sidebar li,
-      .sidebar span {
-        color: #ffffff !important;
-      }
-
-      .sidebar .border-secondary {
-        border-color: #e6ddc9 !important;
-      }
-
-      .main-content {
-        background: #efe8d8 !important;
-        color: #111111;
-        width: 100%;
-      }
-
-      .main-content,
-      .main-content .text-on-surface,
-      .main-content .text-on-surface-variant,
-      .main-content .text-secondary,
-      .main-content h1,
-      .main-content h2,
-      .main-content h3,
-      .main-content p,
-      .main-content li,
-      .main-content span {
-        color: #111111 !important;
-      }
-
-      .main-content .bg-primary-container {
-        background-color: #214b3a !important;
-        color: #ffffff !important;
-      }
-
-      .main-content .bg-primary-container .material-symbols-outlined {
-        color: #ffffff !important;
-      }
-
-      .main-content .border-secondary\/20 {
-        border-color: rgba(33, 75, 58, 0.22) !important;
-      }
-
-      .hackerrank-icon {
-        width: 56px;
-        height: 56px;
-        border-radius: 999px;
-        background: #0c5da5;
+      .btn {
         display: inline-flex;
         align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        font-size: 0.7rem;
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-      }
-
-      .back-home {
-        position: fixed;
-        top: 16px;
-        left: 16px;
-        width: 46px;
-        height: 46px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
+        gap: 8px;
+        min-height: 44px;
+        padding: 0 20px;
+        border: 0;
         border-radius: 999px;
-        background: #2c5a43;
-        color: #ffffff;
+        font: 700 15px/1 "Manrope", sans-serif;
         text-decoration: none;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-        transition: transform 160ms ease, background 160ms ease;
-      }
-
-      .back-home:hover {
-        transform: translateY(-1px);
-        background: #214b3a;
-      }
-
-      .back-home:focus-visible {
-        outline: 2px solid #ffffff;
-        outline-offset: 2px;
-      }
-
-      .pdf-controls {
-        margin-bottom: 20px;
-        display: flex;
-        gap: 10px;
-      }
-      
-      .pdf-btn {
-        padding: 10px 20px;
-        background: #2c5a43;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        font-size: 14px;
-        font-weight: 600;
         cursor: pointer;
-        transition: background 200ms ease;
+        transition: transform 300ms cubic-bezier(0.34, 1.4, 0.64, 1), box-shadow 300ms ease, background-color 200ms ease;
       }
-      
-      .pdf-btn:hover {
-        background: #214b3a;
+
+      .btn:hover {
+        transform: translateY(-2px);
       }
-      
-      @media (max-width: 800px) {
-        .a4-page {
-          grid-template-columns: 1fr;
-          height: auto;
+
+      .btn svg {
+        width: 18px;
+        height: 18px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .btn-back {
+        background: transparent;
+        color: var(--green);
+        border: 1.5px solid var(--green);
+      }
+
+      .btn-back:hover {
+        background: var(--green);
+        color: var(--cream);
+      }
+
+      .btn-print {
+        background: var(--gold);
+        color: var(--ink);
+      }
+
+      .btn-print:hover {
+        box-shadow: 0 10px 24px rgba(227, 165, 43, 0.35);
+      }
+
+      .btn:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 3px;
+      }
+
+      .hint {
+        width: 100%;
+        margin: 0;
+        font-size: 13px;
+        color: var(--muted);
+        text-align: right;
+      }
+
+      /* A4 sheet: 210 x 297 mm */
+      .page {
+        width: 210mm;
+        max-width: 100%;
+        min-height: 297mm;
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 0 2px 6px rgba(22, 33, 28, 0.06), 0 24px 48px rgba(22, 33, 28, 0.1);
+        border-top: 10px solid var(--green);
+        padding: 40px 56px 44px;
+        font-size: 15px;
+        line-height: 1.45;
+        animation: sheet-in 800ms var(--ease-out) both;
+      }
+
+      .page > * {
+        animation: rise 700ms var(--ease-out) both;
+        animation-delay: calc(var(--d, 0) * 70ms + 200ms);
+      }
+
+      header {
+        padding-bottom: 16px;
+        border-bottom: 1.5px solid var(--green);
+      }
+
+      h1 {
+        margin: 0;
+        font-family: "Fraunces", Georgia, serif;
+        font-size: 36px;
+        line-height: 1.1;
+        color: var(--green);
+      }
+
+      .role {
+        margin: 6px 0 0;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      .contact-line {
+        margin: 6px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px 14px;
+        font-size: 14px;
+        color: var(--muted);
+      }
+
+      .contact-line a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .contact-line a:hover {
+        color: var(--green);
+        text-decoration: underline;
+      }
+
+      section {
+        display: grid;
+        grid-template-columns: 124px minmax(0, 1fr);
+        gap: 0 24px;
+        padding-top: 18px;
+      }
+
+      h2 {
+        margin: 2px 0 0;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--green);
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .item + .item {
+        margin-top: 12px;
+      }
+
+      .item-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .item-head span {
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      ul {
+        margin: 2px 0 0;
+        padding-left: 18px;
+      }
+
+      dl {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 140px minmax(0, 1fr);
+        gap: 4px 12px;
+      }
+
+      dt {
+        font-weight: 700;
+      }
+
+      dd {
+        margin: 0;
+      }
+
+      @keyframes sheet-in {
+        from {
+          opacity: 0;
+          transform: translateY(24px) scale(0.985);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 28px 20px 32px;
+          min-height: 0;
         }
 
-        .pdf-controls {
-          flex-direction: column;
+        section,
+        dl {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        h2 {
+          margin-bottom: 6px;
+        }
+
+        dd + dt {
+          margin-top: 6px;
+        }
+
+        .hint {
+          text-align: left;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .page,
+        .page > * {
+          animation: none;
+        }
+
+        .btn {
+          transition: none;
         }
       }
 
       @media print {
-        * {
-          -webkit-print-color-adjust: exact !important;
-          print-color-adjust: exact !important;
-        }
-
-        .pdf-controls {
-          display: none !important;
-        }
-
-        .back-home {
-          display: none !important;
-        }
-
-        html,
-        body {
-          width: 210mm;
-          height: 297mm;
-          overflow: hidden;
-        }
-
-        body {
-          background: none;
-          display: block;
-          margin: 0;
-          padding: 0;
-          min-height: auto;
-        }
-
-        .a4-page {
-          width: 210mm;
-          height: 297mm;
-          grid-template-columns: 34% 66%;
-          box-shadow: none;
-          margin: 0;
-          page-break-after: avoid;
-          break-after: avoid-page;
-          page-break-inside: avoid;
-          break-inside: avoid-page;
-        }
-
-        .sidebar {
-          background-color: #2c5a43 !important;
-          background-image: none !important;
-        }
-
-        .main-content {
-          background: #efe8d8 !important;
-        }
-
         @page {
           size: A4;
           margin: 0;
         }
+
+        body {
+          padding: 0;
+          background: #fff;
+        }
+
+        .toolbar {
+          display: none;
+        }
+
+        .page {
+          width: 210mm;
+          height: 297mm;
+          min-height: 0;
+          box-shadow: none;
+          animation: none;
+          overflow: hidden;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
+        .page > * {
+          animation: none;
+        }
       }
     </style>
-</head>
-<body class="bg-surface font-body text-on-surface">
-<a class="back-home" href="index.html" aria-label="Back to home page">
-  <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-</a>
-<div class="pdf-controls">
-  <button class="pdf-btn" onclick="downloadPDF()">📥 Download as PDF</button>
-  <button class="pdf-btn" onclick="window.print()" style="background: #214b3a;">🖨️ Print</button>
-</div>
-<div class="a4-page" id="resumePage">
-<!-- SIDEBAR (Left Column) -->
-<aside class="sidebar bg-primary-container grainy-bg flex flex-col py-10 px-6 shrink-0 relative h-full">
-<div class="flex flex-col items-center mb-8">
-<div class="w-36 h-36 rounded-full border-4 border-secondary overflow-hidden bg-white flex items-center justify-center">
-<img class="w-full h-full object-cover" alt="Profile portrait" src="profile1.jpeg"/>
-</div>
-<h1 class="font-headline text-2xl font-black text-secondary tracking-tighter text-center uppercase">NUTTAPHAT YUENYONG</h1>
-<p class="font-label text-[10px] font-bold tracking-[0.2em] text-secondary/80 mt-1 uppercase">BUSINESS ANALYST INTERN</p>
-</div>
-<!-- Profile Section -->
-<section class="mb-6">
-<div class="flex items-center gap-2 mb-3">
-<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">person</span>
-<h2 class="font-label text-xs font-extrabold uppercase tracking-widest text-secondary">Profile</h2>
-</div>
-<ul class="space-y-2 text-secondary text-xs font-medium">
-<li class="flex items-start gap-3">
-<span class="opacity-60">Date of Birth:</span>
-<span>October 28, 2002</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="opacity-60">Gender:</span>
-<span>Male</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="opacity-60">Position:</span>
-<span>Business Analyst Intern</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="opacity-60">Address:</span>
-<span class="leading-tight">9/1 Moo 11, Khlong Preng, Mueang, Chachoengsao 24000</span>
-</li>
-</ul>
-</section>
-<!-- Contact Section -->
-<section class="mb-6">
-<div class="flex items-center gap-2 mb-3">
-<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">contact_page</span>
-<h2 class="font-label text-xs font-extrabold uppercase tracking-widest text-secondary">Contact</h2>
-</div>
-<ul class="space-y-2 text-secondary text-xs font-medium">
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-sm">call</span>
-<span>099-2844585</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-sm">mail</span>
-<span>nuttaputza123@gmail.com</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-sm">public</span>
-<span>GitHub: flame123-np</span>
-</li>
-</ul>
-</section>
-<!-- Interests Section -->
-<section class="mb-6">
-<div class="flex items-center gap-2 mb-3">
-<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">stars</span>
-<h2 class="font-label text-xs font-extrabold uppercase tracking-widest text-secondary">Interests</h2>
-</div>
-<div class="flex flex-wrap gap-4 text-secondary">
-<span class="material-symbols-outlined text-xl" title="Data Analysis">bar_chart</span>
-<span class="material-symbols-outlined text-xl" title="System Design">design_services</span>
-<span class="material-symbols-outlined text-xl" title="Team Communication">groups</span>
-<span class="material-symbols-outlined text-xl" title="Learning New Technologies">rocket_launch</span>
-</div>
-</section>
-<!-- Education Section -->
-<section>
-<div class="flex items-center gap-2 mb-3">
-<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">school</span>
-<h2 class="font-label text-xs font-extrabold uppercase tracking-widest text-secondary">Education</h2>
-</div>
-<div class="space-y-2 text-[10px] font-medium">
-  <p class="leading-tight">Kasetsart University</p>
-  <p class="leading-tight">Faculty of Information Technology</p>
-  <p class="leading-tight">2023 - Expected Graduation 2026</p>
-</div>
-</section>
-</aside>
-<!-- MAIN CONTENT (Right Column) -->
-<main class="main-content bg-surface-container-lowest p-10 h-full overflow-hidden">
-<!-- Introduction -->
-<header class="mb-10">
-<h1 class="font-headline text-5xl font-black text-primary-container mb-4">HELLO!</h1>
-<div class="max-w-xl text-on-surface leading-snug text-sm">
-<p class="mb-3">
-                        I am an Information Technology student at Kasetsart University with a strong interest in Business Analysis.
-                    </p>
-<p>
-                        I am skilled in gathering and analyzing user requirements, designing processes, and communicating effectively with development teams. I am detail-oriented, responsible, and eager to learn new skills to contribute value to the organization.
-                    </p>
-</div>
-</header>
-<!-- Experience Section -->
-<section class="mb-10">
-<div class="flex items-center gap-3 mb-6">
-<span class="w-10 h-10 bg-primary-container flex items-center justify-center rounded-full text-secondary">
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">work</span>
-</span>
-<h2 class="font-headline text-xl font-black text-secondary uppercase tracking-tight">PROJECTS / RELEVANT EXPERIENCE</h2>
-</div>
-<div class="ml-5 border-l-2 border-secondary/20 pl-6 space-y-6">
+  </head>
+  <body>
+    <div class="toolbar">
+      <a class="btn btn-back" href="index.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5" /><path d="m11 18-6-6 6-6" /></svg>
+        Back to portfolio
+      </a>
+      <button class="btn btn-print" type="button" onclick="window.print()">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" /></svg>
+        Download PDF
+      </button>
+      <p class="hint">Choose “Save as PDF” in the print dialog — the text stays selectable for applicant tracking systems.</p>
+    </div>
 
-<div class="relative timeline-dot">
-<span class="font-headline text-sm font-bold text-secondary">2025</span>
-<h3 class="font-bold text-base mt-0.5">Web Cinema</h3>
-<p class="text-on-surface-variant text-xs mt-1">Created an online cinema booking demo website featuring seat selection, pricing, and mobile-first layout.</p>
-</div>
-<div class="relative timeline-dot">
-<span class="font-headline text-sm font-bold text-secondary">2025</span>
-<h3 class="font-bold text-base mt-0.5">System Analysis Project</h3>
-<p class="text-on-surface-variant text-xs mt-1">Designed use cases and ER diagrams for a restaurant booking system with requirements gathering and stakeholder alignment.</p>
-</div>
-<div class="relative timeline-dot">
-<span class="font-headline text-sm font-bold text-secondary">2025</span>
-<h3 class="font-bold text-base mt-0.5">Data Visualization Project</h3>
-<p class="text-on-surface-variant text-xs mt-1">Analyzed sales data and implemented dashboards with Excel and Power BI for actionable management insights.</p>
-</div>
-</div>
-</section>
-<!-- Abilities Section -->
-<section class="mb-10">
-<div class="flex items-center gap-3 mb-6">
-<span class="w-10 h-10 bg-primary-container flex items-center justify-center rounded-full text-secondary">
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">palette</span>
-</span>
-<h2 class="font-headline text-xl font-black text-secondary uppercase tracking-tight">SKILLS</h2>
-</div>
-<div class="grid grid-cols-4 gap-4">
-<div class="flex flex-col items-center text-center">
-<div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center mb-2">
-<span class="material-symbols-outlined text-2xl">description</span>
-</div>
-<span class="font-bold text-[9px] text-secondary uppercase tracking-wider">Requirement Analysis & Documentation</span>
-</div>
-<div class="flex flex-col items-center text-center">
-<div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center mb-2">
-<span class="material-symbols-outlined text-2xl">account_tree</span>
-</div>
-<span class="font-bold text-[9px] text-secondary uppercase tracking-wider">Process Modeling (Flowchart, BPMN)</span>
-</div>
-<div class="flex flex-col items-center text-center">
-<div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center mb-2">
-<span class="material-symbols-outlined text-2xl">analytics</span>
-</div>
-<span class="font-bold text-[9px] text-secondary uppercase tracking-wider">Data Analysis & Visualization</span>
-</div>
-<div class="flex flex-col items-center text-center">
-<div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center mb-2">
-<span class="material-symbols-outlined text-2xl">groups</span>
-</div>
-<span class="font-bold text-[9px] text-secondary uppercase tracking-wider">Communication & Team Collaboration</span>
-</div>
-</div>
-</section>
-<!-- Software Skills Section -->
-<section>
-<div class="flex items-center gap-3 mb-6">
-<span class="w-10 h-10 bg-primary-container flex items-center justify-center rounded-full text-secondary">
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">terminal</span>
-</span>
-<h2 class="font-headline text-xl font-black text-secondary uppercase tracking-tight">SOFTWARE SKILLS</h2>
-</div>
-<div class="grid grid-cols-4 gap-4">
-<div class="flex flex-col items-center">
-<img class="w-14 h-14" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL Logo" />
-<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">SQL (Intermediate)</p>
-</div>
-<div class="flex flex-col items-center">
-<img class="w-14 h-14" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Logo" />
-<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">Node (Basic)</p>
-</div>
-<div class="flex flex-col items-center">
-<img class="w-14 h-14" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS Logo" />
-<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">CSS (Basic)</p>
-</div>
-<div class="flex flex-col items-center">
-<img class="w-14 h-14" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" />
-<p class="mt-2 font-bold text-[8px] text-on-surface-variant uppercase tracking-widest">JavaScript (Basic)</p>
-</div>
-</div>
-</section>
-</main>
-</div>
+    <article class="page">
+      <header style="--d: 0">
+        <h1>Nuttaphat Yuenyong</h1>
+        <p class="role">Business Analyst Intern</p>
+        <p class="contact-line">
+          <a href="mailto:nuttaputza123@gmail.com">nuttaputza123@gmail.com</a>
+          <span>099-284-4585</span>
+          <a href="https://github.com/flame123-np">github.com/flame123-np</a>
+          <a href="https://flame123-np.github.io/Portfolio/">flame123-np.github.io/Portfolio</a>
+          <span>Chachoengsao, Thailand</span>
+        </p>
+      </header>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-<script>
-function downloadPDF() {
-  const element = document.getElementById('resumePage');
-  const opt = {
-    margin: 0,
-    filename: 'Resume_Nuttaphat_Yuenyong.pdf',
-    image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2 },
-    jsPDF: { format: 'a4', orientation: 'portrait' }
-  };
-  html2pdf().set(opt).from(element).save();
-}
-</script>
-</body>
+      <section style="--d: 1">
+        <h2>Profile</h2>
+        <p>
+          Information Technology student at Kasetsart University focused on business analysis: gathering and
+          analysing user requirements, modeling processes and working closely with development teams.
+          Detail-oriented, responsible and quick to learn.
+        </p>
+      </section>
+
+      <section style="--d: 2">
+        <h2>Education</h2>
+        <div>
+          <div class="item-head"><strong>Kasetsart University</strong><span>2023 – 2026 (expected)</span></div>
+          <p>Faculty of Information Technology</p>
+        </div>
+      </section>
+
+      <section style="--d: 3">
+        <h2>Projects</h2>
+        <div>
+          <div class="item">
+            <div class="item-head"><strong>System Analysis — Restaurant booking system</strong><span>2024</span></div>
+            <ul>
+              <li>Gathered requirements and aligned them with stakeholders and the team’s design.</li>
+              <li>Produced the use case diagram and ER diagram for the booking system.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="item-head"><strong>Data Visualization — Sales dashboard</strong><span>2025</span></div>
+            <ul>
+              <li>Analysed sales data and built dashboards in Excel and Power BI for a team presentation.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="item-head"><strong>Web Cinema — Online ticket booking</strong><span>2025</span></div>
+            <ul>
+              <li>Built a booking demo with seat selection, pricing and a mobile-first layout; wrote the project report.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="item-head"><strong>IoT — Alcohol measuring device</strong></div>
+            <ul>
+              <li>Built an IoT device that measures alcohol level as a hardware project.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section style="--d: 4">
+        <h2>Skills</h2>
+        <dl>
+          <dt>Business analysis</dt>
+          <dd>Requirement analysis, documentation, use case &amp; ER diagrams, flowcharts, BPMN</dd>
+          <dt>Data</dt>
+          <dd>Microsoft Excel, Power BI, SQL</dd>
+          <dt>Tools</dt>
+          <dd>Jira, Trello, GitHub</dd>
+          <dt>Web</dt>
+          <dd>HTML, CSS, JavaScript, Node.js</dd>
+        </dl>
+      </section>
+
+      <section style="--d: 5">
+        <h2>Certifications</h2>
+        <ul>
+          <li>HackerRank: SQL (Intermediate), JavaScript (Basic), Node.js (Basic), CSS (Basic)</li>
+          <li>AI tools training</li>
+        </ul>
+      </section>
+
+      <section style="--d: 6">
+        <h2>Activities</h2>
+        <ul>
+          <li>2025 — Presented a data dashboard showcase to instructors</li>
+          <li>2024 — System analysis workshop and team presentation</li>
+          <li>Team data &amp; reporting in university activities; Thai language seminar</li>
+        </ul>
+      </section>
+
+      <section style="--d: 7">
+        <h2>Languages</h2>
+        <p>Thai — native · English — intermediate</p>
+      </section>
+    </article>
+  </body>
 </html>

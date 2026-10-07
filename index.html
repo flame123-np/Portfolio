@@ -3,382 +3,375 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nuttaphat Yuenyong Portfolio</title>
+    <title>Nuttaphat Yuenyong — Business Analyst Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Nuttaphat Yuenyong, Information Technology student at Kasetsart University focused on business analysis, requirement analysis, process modeling and data dashboards."
+    />
+    <meta property="og:title" content="Nuttaphat Yuenyong — Business Analyst Portfolio" />
+    <meta
+      property="og:description"
+      content="IT student at Kasetsart University. Requirement analysis, process modeling (BPMN) and Power BI dashboards."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://flame123-np.github.io/Portfolio/" />
+    <meta name="theme-color" content="#1F4D3A" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Manrope:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      .pdf-preview, .web-preview {
-        width: 100%;
-        height: 250px;
-        border: none;
-        overflow: hidden;
-        background: #f0f0f0;
-      }
-      .preview-frame {
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
-    </style>
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
   </head>
   <body>
-    <main id="home">
-      <section class="hero-wrap">
-        <header class="topbar dark-bar">
-          <a class="brand" href="#home"><span class="spark">✦</span>Nuttaphat  Yuenyong</a>
-          <nav>
-            <a href="#about">About me</a>
-            <a href="#resume">Resume</a>
-            <a href="#projects">Projects</a>
-          </nav>
-          <a class="cta" href="https://mail.google.com/mail/?view=cm&fs=1&to=nuttaputza123@gmail.com&su=Hello%20Nuttaphat&body=Hi%20Nuttaphat%2C%0A%0AI%20would%20like%20to%20connect%20about..." target="_blank" rel="noopener">Get in touch!</a>
-        </header>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
 
-        <section class="hero reveal">
-          <div class="hero-layer-lines" aria-hidden="true">
-            <span>PORTFOLIO</span>
-            <span>PORTFOLIO</span>
-            <span>PORTFOLIO</span>
-          </div>
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Nuttaphat Yuenyong, back to top">
+          <span class="brand-mark" aria-hidden="true">NY</span>
+          <span class="brand-name">Nuttaphat Yuenyong</span>
+        </a>
 
-          <h1>PORTFOLIO</h1>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
 
-          <div class="hero-grid">
-            <figure class="photo-card">
-              <img
-                src="profile1.jpeg"
-                alt="Portrait of Nuttaphat Yuenyong"
-              />
-              <figcaption>
-                I am an Information Technology student at Kasetsart University with a strong interest in Business Analysis, focusing on requirement analysis, process design, and collaboration with development teams.
-              </figcaption>
-            </figure>
-          </div>
-        </section>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+          <a href="#work">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn-gold btn-sm nav-cta" href="resume.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" /></svg>
+            Resume
+          </a>
+        </nav>
+      </div>
+    </header>
 
-        <section class="hero-divider">
-          <div class="scroll-pill">Scroll<br />down</div>
-        </section>
-      </section>
-
-      <section class="paper-wrap">
-        <section id="about" class="about reveal">
-          <article class="about-text">
-            <h2>Hello,<br />I'm Nuttaphat!</h2>
-            <p>
-              I am an Information Technology student at Kasetsart University with a strong interest in Business Analysis. I am skilled in gathering and analyzing user requirements, designing processes, and communicating effectively with development teams. I am detail-oriented, responsible, and eager to learn new skills to contribute value to the organization.
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow-pill hero-in" style="--d: 0">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              Open to Business Analyst internships
+            </span>
+            <h1 class="hero-title hero-in" style="--d: 1">Turning user needs into clear requirements and processes.</h1>
+            <p class="hero-lead hero-in" style="--d: 2">
+              Information Technology student at Kasetsart University. I gather and analyse requirements, model
+              processes with flowcharts and BPMN, and turn data into dashboards that teams can act on.
             </p>
-            <div class="about-actions">
-              <a class="github-pill" href="https://github.com/flame123-np" target="_blank" rel="noreferrer" aria-label="Open GitHub profile">
-                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.88 10.95.58.1.8-.25.8-.56 0-.28-.01-1.2-.02-2.17-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.28-1.7-1.28-1.7-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.52-2.56-.29-5.24-1.28-5.24-5.71 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.45.11-3.02 0 0 .97-.31 3.17 1.18.92-.26 1.9-.39 2.88-.39.98 0 1.96.13 2.88.39 2.2-1.49 3.17-1.18 3.17-1.18.62 1.57.23 2.73.11 3.02.73.8 1.18 1.82 1.18 3.08 0 4.44-2.69 5.42-5.26 5.7.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
-                </svg>
+            <div class="hero-actions hero-in" style="--d: 3">
+              <a class="btn btn-gold" href="#work">
+                See my work
+                <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
               </a>
-              <a class="link-pill" href="resume.html">
-                View Resume
-              </a>
+              <a class="btn btn-outline-light" href="mailto:nuttaputza123@gmail.com">Email me</a>
             </div>
-          </article>
-
-          <aside id="contact" class="contact-card">
-            <div class="image-frame"></div>
-            <img src="profile2.png" alt="Portrait for contact section" />
-            <span class="floating-tag date">October 28, 2002</span>
-            <span class="floating-tag nation">Male</span>
-            <div class="contact-box">
-              <h3>Contact</h3>
-              <p class="contact-item location">
-                <span class="contact-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                    <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" />
-                  </svg>
-                </span>
-                9/1 Moo 11, Khlong Preng, Mueang, Chachoengsao 24000
-              </p>
-              <p class="contact-item email">
-                <span class="contact-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                    <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm8 5 8-4H4l8 4zm0 2L4 9v7h16V9l-8 4z" />
-                  </svg>
-                </span>
-                nuttaputza123@gmail.com
-              </p>
-              <p class="contact-item phone">
-                <span class="contact-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                    <path d="M6.62 10.79a15.47 15.47 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.3.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.28.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z" />
-                  </svg>
-                </span>
-                099-2844585
-              </p>
-            </div>
-          </aside>
-        </section>
-
-        <section id="resume" class="resume reveal">
-          <div class="resume-grid">
-            <article class="edu">
-              <h3>Education</h3>
-              <ul class="timeline-list">
-                <li>
-                  <strong>2023 - 2026</strong>
-                  Kasetsart University
-                  <span>Faculty of Information Technology</span>
-                </li>
-                <li>
-                  <strong>Current Status</strong>
-                  Information Technology Student
-                  <span>Expected Graduation: 2026</span>
-                </li>
-              </ul>
-            </article>
-
-            <article class="skills" id="work">
-              <p class="resume-outline" aria-hidden="true">
-                <span>RESUME</span>
-                <span>RESUME</span>
-                <span>RESUME</span>
-              </p>
-              <h3>Technical skills</h3>
-              <div class="skills-cols">
-                <div>
-                  <h4>Software tools</h4>
-                  <p>Microsoft Excel, Power BI, SQL (basic), Jira, Trello, GitHub</p>
-                </div>
-                <div>
-                  <h4>Business Analysis</h4>
-                  <p>Requirement Analysis, Documentation, Process Modeling (Flowchart, BPMN)</p>
-                </div>
-              </div>
-              <div class="chips dark">
-                <span>Requirement Analysis</span>
-                <span>Process Modeling</span>
-                <span>Data Visualization</span>
-                <span>Communication</span>
-                <span>Team Collaboration</span>
-              </div>
-            </article>
-
-            <article class="exp-card">
-              <h3>Projects / Experience</h3>
-              <ul class="timeline-list">
-                <li>
-                  <strong>2024</strong>
-                  System Analysis Project
-                  <span>Designed Use Case and ER Diagram for a restaurant booking system, aligned requirements with team design.</span>
-                </li>
-                <li>
-                  <strong>2025</strong>
-                  Data Visualization Project
-                  <span>Analyzed sales data and built dashboards using Excel and Power BI for team presentation.</span>
-                </li>
-                <li>
-                  <strong>University Activities</strong>
-                  Team Data & Reporting
-                  <span>Worked in teams to manage data and present reports, improving communication and collaboration skills.</span>
-                </li>
-              </ul>
-              <div class="chips light">
-                <span>#DetailOriented</span>
-                <span>#Responsible</span>
-                <span>#FastLearner</span>
-                <span>#Teamwork</span>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="extras reveal">
-          <article>
-            <h3>Activities</h3>
-            <ul class="activity-list timeline-list">
-              <li><strong>2024</strong> System Analysis workshop and team presentation</li>
-              <li><strong>2025</strong> Data dashboard showcase with instructors</li>
+            <ul class="hero-facts hero-in" style="--d: 4">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z" /><path d="M6 12v5c3 2 9 2 12 0v-5" /></svg>
+                Kasetsart University · Faculty of IT
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M3 10h18" /><path d="M8 3v4" /><path d="M16 3v4" /></svg>
+                Expected graduation 2026
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" /><circle cx="12" cy="9.5" r="2.5" /></svg>
+                Chachoengsao, Thailand
+              </li>
             </ul>
-          </article>
-          <article>
-            <h3>Language</h3>
-            <div class="three-col">
-              <div><strong>English</strong><p>Intermediate</p></div>
-              <div><strong>Thai</strong><p>Native</p></div>
-            </div>
-            <h3 class="hobby-title">Hobbies and Interests</h3>
-            <div class="hobbies">
-              <article class="hobby-item">
-                <span class="hobby-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                    <path d="M15 3a1 1 0 0 0-1 1v9.27A3.5 3.5 0 1 0 16 16.5V8.3l3.29-.82A1 1 0 0 0 20 6.5v-2a1 1 0 0 0-1.24-.97L15 4.47V4a1 1 0 0 0-1-1zm-4.5 12a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z" />
-                  </svg>
-                </span>
-                <p class="hobby-main">Music</p>
-                <p class="hobby-sub">Pop, K-pop</p>
-              </article>
+          </div>
 
-              <article class="hobby-item">
-                <span class="hobby-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                    <path d="M5 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h5v2H8a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2h-2v-2h5a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5zm0 2h14v10H5V6z" />
-                  </svg>
-                </span>
-                <p class="hobby-main">Innovation</p>
-                <p class="hobby-sub">Technology</p>
-              </article>
-
-              <article class="hobby-item">
-                <span class="hobby-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                    <path d="M20.7 3.3a1 1 0 0 0-1.4 0l-6.8 6.8 1.4 1.4 6.8-6.8a1 1 0 0 0 0-1.4zM11.1 11.5 4.8 17.8a3.2 3.2 0 0 0-.8 1.3l-.9 2.7a1 1 0 0 0 1.3 1.3l2.7-.9a3.2 3.2 0 0 0 1.3-.8l6.3-6.3-3.6-3.6zM7.2 19.9l-1.4.5.5-1.4a1.2 1.2 0 0 1 .3-.5l.8-.8 1.1 1.1-.8.8a1.2 1.2 0 0 1-.5.3z" />
-                  </svg>
-                </span>
-                <p class="hobby-main">Creative Arts</p>
-                <p class="hobby-sub">Digital art, Miniature craft</p>
-              </article>
-
-              <article class="hobby-item">
-                <span class="hobby-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                    <path d="M12 13c-2.2 0-4 1.6-4 3.5S9.8 20 12 20s4-1.6 4-3.5S14.2 13 12 13zm-6.2-2.1c1 0 1.8-.9 1.8-2s-.8-2-1.8-2-1.8.9-1.8 2 .8 2 1.8 2zm12.4 0c1 0 1.8-.9 1.8-2s-.8-2-1.8-2-1.8.9-1.8 2 .8 2 1.8 2zM8.9 7.4c1 0 1.8-.9 1.8-2s-.8-2-1.8-2-1.8.9-1.8 2 .8 2 1.8 2zm6.2 0c1 0 1.8-.9 1.8-2s-.8-2-1.8-2-1.8.9-1.8 2 .8 2 1.8 2z" />
-                  </svg>
-                </span>
-                <p class="hobby-main">Pets</p>
-                <p class="hobby-sub">Cat and dog</p>
-              </article>
-            </div>
-          </article>
-        </section>
+          <div class="hero-portrait hero-in" style="--d: 2">
+            <span class="portrait-ring" aria-hidden="true"></span>
+            <img
+              src="images/portrait-cutout.webp"
+              alt="Portrait of Nuttaphat Yuenyong"
+              width="700"
+              height="937"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
       </section>
 
-      <section id="projects" class="work-tail reveal">
-        <div class="work-tail-inner">
-          <h2>My <span>Projects</span></h2>
-          <p class="work-subtitle">Relevant projects in business analysis and data work</p>
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="eyebrow">What I bring</p>
+              <h2>Skills for analysis work</h2>
+            </div>
+            <p class="section-note">Detail-oriented and responsible — comfortable working between users and development teams.</p>
+          </div>
 
-          <div class="project-grid">
+          <div class="skill-grid" data-stagger>
+            <article class="card skill-card" data-reveal>
+              <span class="icon-tile" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z" /><path d="M14 3v5h5" /><path d="M9 13h6" /><path d="M9 17h4" /></svg>
+              </span>
+              <h3>Requirements &amp; documentation</h3>
+              <p>Gathering and analysing user requirements, writing them up clearly and aligning them with the team’s design.</p>
+              <p class="skill-tools">Requirement analysis · Use case diagrams · ER diagrams</p>
+            </article>
+            <article class="card skill-card" data-reveal>
+              <span class="icon-tile" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="5" rx="1" /><rect x="14" y="16" width="7" height="5" rx="1" /><path d="M6.5 8v4a2 2 0 0 0 2 2h7a2 2 0 0 1 2 2" /><path d="M17.5 3.5 21 7l-3.5 3.5L14 7Z" /></svg>
+              </span>
+              <h3>Process modeling</h3>
+              <p>Mapping how work flows today and how it should flow, so everyone agrees before anything is built.</p>
+              <p class="skill-tools">Flowcharts · BPMN</p>
+            </article>
+            <article class="card skill-card" data-reveal>
+              <span class="icon-tile" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 20V10" /><path d="M10 20V4" /><path d="M16 20v-7" /><path d="M22 20H2" /></svg>
+              </span>
+              <h3>Data &amp; reporting</h3>
+              <p>Cleaning and analysing data, then building dashboards that make the numbers easy to present.</p>
+              <p class="skill-tools">Microsoft Excel · Power BI · SQL</p>
+            </article>
+          </div>
 
-            <article class="project-card">
-              <div class="web-preview">
-                <iframe class="preview-frame" src="https://flame123-np.github.io/241-2567-820/" loading="lazy"></iframe>
+          <div class="chip-row" data-reveal>
+            <span class="chip-label">Also use</span>
+            <span class="chip">Jira</span>
+            <span class="chip">Trello</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">HTML · CSS · JavaScript</span>
+            <span class="chip">Node.js</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section class="section" id="work">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="eyebrow">Selected work</p>
+              <h2>Case studies</h2>
+            </div>
+          </div>
+
+          <div class="work-list">
+            <article class="card case-card" data-reveal>
+              <!-- TODO: replace this placeholder with an image of the use case and ER diagrams -->
+              <div class="case-media media-placeholder">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="5" rx="1" /><rect x="14" y="3" width="7" height="5" rx="1" /><rect x="8.5" y="16" width="7" height="5" rx="1" /><path d="M6.5 8v3h11V8" /><path d="M12 11v5" /></svg>
+                <span>Use case &amp; ER diagrams</span>
               </div>
-              <h3>Project 241-2567-820</h3>
-              <p>Web development project showcase</p>
-              <div class="project-tags"><span>Web Development</span></div>
-              <div class="project-actions">
-                <a href="https://flame123-np.github.io/241-2567-820/" target="_blank">Visit Project</a>
+              <div class="case-body">
+                <div class="tag-row">
+                  <span class="tag tag-dark">System analysis</span>
+                  <span class="tag">2024</span>
+                </div>
+                <h3>Restaurant booking system</h3>
+                <dl class="case-facts">
+                  <dt>My role</dt>
+                  <dd>Gathered requirements and aligned them with stakeholders and the team’s design.</dd>
+                  <dt>Delivered</dt>
+                  <dd>Use case diagram and ER diagram for the booking system.</dd>
+                </dl>
               </div>
             </article>
 
-            <article class="project-card">
-              <div class="web-preview">
-                <iframe class="preview-frame" src="https://flame123-np.github.io/241-2567-8202/" loading="lazy"></iframe>
+            <article class="card case-card" data-reveal>
+              <!-- TODO: replace this placeholder with a screenshot of the Power BI dashboard -->
+              <div class="case-media media-placeholder">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M7 16v-4" /><path d="M12 16V8" /><path d="M17 16v-6" /></svg>
+                <span>Power BI dashboard</span>
               </div>
-              <h3>Project 241-2567-8202</h3>
-              <p>Web development project showcase</p>
-              <div class="project-tags"><span>Web Development</span></div>
-              <div class="project-actions">
-                <a href="https://flame123-np.github.io/241-2567-8202/" target="_blank">Visit Project</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="web-preview">
-                <iframe class="preview-frame" src="https://flame123-np.github.io/web_cinema/" loading="lazy"></iframe>
-              </div>
-              <h3>Web Cinema</h3>
-              <p>Online cinema ticket booking system</p>
-              <div class="project-tags"><span>Web Development</span><span>Entertainment</span></div>
-              <div class="project-actions">
-                <a href="https://flame123-np.github.io/web_cinema/" target="_blank">Visit Project</a>
+              <div class="case-body">
+                <div class="tag-row">
+                  <span class="tag tag-dark">Data visualization</span>
+                  <span class="tag">2025</span>
+                </div>
+                <h3>Sales dashboard in Power BI</h3>
+                <dl class="case-facts">
+                  <dt>My role</dt>
+                  <dd>Analysed the sales data and built the dashboards for the team presentation.</dd>
+                  <dt>Tools</dt>
+                  <dd>Microsoft Excel, Power BI</dd>
+                </dl>
               </div>
             </article>
 
-            <article class="project-card">
-              <img src="h1.png" alt="Certificate 1" />
-              <h1>Certificate 1</h1>
-              <p>Professional certification in software skills</p>
-              <div class="project-tags"><span>HackerRank</span><span>Certification</span></div>
-              <div class="project-actions">
-                <a href="https://www.hackerrank.com/certificates/7e9e66ba604c" target="_blank">View Certificate</a>
-              </div>
-            </article>
+            <div class="project-grid" data-stagger>
+              <article class="card project-card" data-reveal>
+                <!-- TODO: replace with a screenshot of Web Cinema -->
+                <div class="project-media media-placeholder">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2" /><path d="M2 8h20" /><path d="M10 11l4 2.5-4 2.5Z" /></svg>
+                  <span>Web Cinema</span>
+                </div>
+                <div class="project-body">
+                  <p class="kicker">Web development · 2025</p>
+                  <h3>Web Cinema</h3>
+                  <p>Online cinema ticket booking demo with seat selection, pricing and a mobile-first layout.</p>
+                  <div class="link-row">
+                    <a class="text-link" href="https://flame123-np.github.io/web_cinema/" target="_blank" rel="noopener">Live site ↗</a>
+                    <a class="text-link" href="35-ณัฐภัทร-ระบบซื้อตั๋วภาพยนตร์ออนไลน์.pdf" target="_blank" rel="noopener">Project report (PDF)</a>
+                  </div>
+                </div>
+              </article>
 
-            <article class="project-card">
-              <img src="h2.png" alt="Certificate 2" />
-              <h2>Certificate 2</h2>
-              <p>Professional certification in software skills</p>
-              <div class="project-tags"><span>HackerRank</span><span>Certification</span></div>
-              <div class="project-actions">
-                <a href="https://www.hackerrank.com/certificates/e20fbc68e34d" target="_blank">View Certificate</a>
-              </div>
-            </article>
+              <article class="card project-card" data-reveal>
+                <div class="project-media">
+                  <img src="images/iot.jpg" alt="IoT alcohol measuring device prototype" width="640" height="853" loading="lazy" />
+                </div>
+                <div class="project-body">
+                  <p class="kicker">IoT · Hardware</p>
+                  <h3>Alcohol measuring device <span lang="th" class="th">(เครื่องวัดแอลกอฮอล์)</span></h3>
+                  <!-- TODO: say what the device measures and what you built or programmed -->
+                  <p>An IoT device that measures alcohol level, built as a hardware project.</p>
+                  <div class="link-row">
+                    <a class="text-link" href="iot.jpg" target="_blank" rel="noopener">View photo</a>
+                  </div>
+                </div>
+              </article>
 
-            <article class="project-card">
-              <img src="h3.png" alt="Certificate 3" />
-              <h3>Certificate 3</h3>
-              <p>Professional certification in software skills</p>
-              <div class="project-tags"><span>HackerRank</span><span>Certification</span></div>
-              <div class="project-actions">
-                <a href="https://www.hackerrank.com/certificates/81c947c89300" target="_blank">View Certificate</a>
-              </div>
-            </article>
+              <article class="card project-card" data-reveal>
+                <!-- TODO: give these course projects real names and a one-line description each -->
+                <div class="project-media media-placeholder">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5" /><path d="m16 7 5 5-5 5" /><path d="m14 4-4 16" /></svg>
+                  <span>Course web projects</span>
+                </div>
+                <div class="project-body">
+                  <p class="kicker">Web development · Course 241</p>
+                  <h3>Course web projects</h3>
+                  <p>Two websites built for the 241 web programming course.</p>
+                  <div class="link-row">
+                    <a class="text-link" href="https://flame123-np.github.io/241-2567-820/" target="_blank" rel="noopener">Project 1 ↗</a>
+                    <a class="text-link" href="https://flame123-np.github.io/241-2567-8202/" target="_blank" rel="noopener">Project 2 ↗</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <article class="project-card">
-              <img src="h4.png" alt="Certificate 4" />
-              <h4>Certificate 4</h4>
-              <p>Professional certification in software skills</p>
-              <div class="project-tags"><span>HackerRank</span><span>Certification</span></div>
-              <div class="project-actions">
-                <a href="https://www.hackerrank.com/certificates/27699dcb1788" target="_blank">View Certificate</a>
-              </div>
-            </article>
+      <!-- EXPERIENCE -->
+      <section class="section" id="experience">
+        <div class="container two-col">
+          <div data-reveal>
+            <p class="eyebrow">Experience</p>
+            <h2>Activities &amp; teamwork</h2>
+            <ol class="timeline" data-stagger>
+              <li data-reveal>
+                <p class="timeline-year">2025</p>
+                <h3>Data dashboard showcase</h3>
+                <p>Presented a data dashboard to instructors.</p>
+              </li>
+              <li data-reveal>
+                <p class="timeline-year">2024</p>
+                <h3>System analysis workshop</h3>
+                <p>Took part in the workshop and the team presentation.</p>
+              </li>
+              <li data-reveal>
+                <p class="timeline-year">University activities</p>
+                <h3>Team data &amp; reporting</h3>
+                <p>Managed data and presented reports as part of a team.</p>
+              </li>
+            </ol>
+          </div>
 
-            <article class="project-card">
-              <img src="summana.jpg" alt="Thai Language Seminar" />
-              <h3>สัมมนาวิชาภาษาไทย</h3>
-              <p>Thai language seminar participation and learning</p>
-              <div class="project-tags"><span>Seminar</span><span>Language</span><span>Thai</span></div>
-              <div class="project-actions">
-                <a href="summana.jpg" target="_blank">View Certificate</a>
-              </div>
+          <div class="side-stack" data-stagger>
+            <article class="card card-dark" data-reveal>
+              <p class="eyebrow eyebrow-light">Education</p>
+              <h3 class="serif">Kasetsart University</h3>
+              <p>Faculty of Information Technology</p>
+              <p>2023 – 2026 (expected)</p>
             </article>
-
-            <article class="project-card">
-              <img src="iot.jpg" alt="IoT Alcohol Measurement Device" />
-              <h3>เครื่องวัดแอลกอฮอร์</h3>
-              <p>IoT alcohol measurement device project</p>
-              <div class="project-tags"><span>IoT</span><span>Hardware</span><span>Project</span></div>
-              <div class="project-actions">
-                <a href="iot.jpg" target="_blank">View Project</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <embed class="pdf-preview" src="อบรมai.pdf#page=1" type="application/pdf" />
-              <h3>อบรมการใช้ AI</h3>
-              <p>AI training and professional development program</p>
-              <div class="project-tags"><span>AI</span><span>Training</span><span>Technology</span></div>
-              <div class="project-actions">
-                <a href="อบรมai.pdf" target="_blank">View Certificate</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <embed class="pdf-preview" src="35-ณัฐภัทร-ระบบซื้อตั๋วภาพยนตร์ออนไลน์.pdf#page=1" type="application/pdf" />
-              <h3>ระบบซื้อตั๋วภาพยนตร์ออนไลน์</h3>
-              <p>Online cinema ticket booking system development report</p>
-              <div class="project-tags"><span>Web Development</span><span>Report</span><span>Project</span></div>
-              <div class="project-actions">
-                <a href="35-ณัฐภัทร-ระบบซื้อตั๋วภาพยนตร์ออนไลน์.pdf" target="_blank">View Report</a>
+            <article class="card lang-card" data-reveal>
+              <p class="eyebrow">Languages</p>
+              <div class="lang-grid">
+                <div><strong>Thai</strong><span>Native</span></div>
+                <div><strong>English</strong><span>Intermediate</span></div>
               </div>
             </article>
           </div>
         </div>
       </section>
+
+      <!-- CERTIFICATIONS -->
+      <section class="section section-last" id="certifications">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="eyebrow">Learning</p>
+              <h2>Certifications &amp; training</h2>
+            </div>
+          </div>
+          <div class="cert-grid" data-stagger>
+            <a class="card cert" href="https://www.hackerrank.com/certificates/7e9e66ba604c" target="_blank" rel="noopener" data-reveal>
+              <img src="images/cert1.jpg" alt="" width="400" height="300" loading="lazy" />
+              <span><strong>SQL (Intermediate)</strong><span>HackerRank · Verify ↗</span></span>
+            </a>
+            <a class="card cert" href="https://www.hackerrank.com/certificates/e20fbc68e34d" target="_blank" rel="noopener" data-reveal>
+              <img src="images/cert2.jpg" alt="" width="400" height="300" loading="lazy" />
+              <span><strong>Node.js (Basic)</strong><span>HackerRank · Verify ↗</span></span>
+            </a>
+            <a class="card cert" href="https://www.hackerrank.com/certificates/81c947c89300" target="_blank" rel="noopener" data-reveal>
+              <img src="images/cert3.jpg" alt="" width="400" height="300" loading="lazy" />
+              <span><strong>CSS (Basic)</strong><span>HackerRank · Verify ↗</span></span>
+            </a>
+            <a class="card cert" href="https://www.hackerrank.com/certificates/27699dcb1788" target="_blank" rel="noopener" data-reveal>
+              <img src="images/cert4.jpg" alt="" width="400" height="300" loading="lazy" />
+              <span><strong>JavaScript (Basic)</strong><span>HackerRank · Verify ↗</span></span>
+            </a>
+            <a class="card cert" href="อบรมai.pdf" target="_blank" rel="noopener" data-reveal>
+              <span class="cert-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6" /><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7" /></svg>
+              </span>
+              <span><strong>AI tools training <span lang="th" class="th">(อบรมการใช้ AI)</span></strong><span>Certificate (PDF) ↗</span></span>
+            </a>
+            <a class="card cert" href="summana.jpg" target="_blank" rel="noopener" data-reveal>
+              <img src="images/seminar.jpg" alt="" width="640" height="853" loading="lazy" />
+              <span><strong>Thai language seminar <span lang="th" class="th">(สัมมนาวิชาภาษาไทย)</span></strong><span>View photo ↗</span></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact" id="contact">
+        <div class="container contact-inner">
+          <h2 data-reveal>Looking for a detail-oriented BA intern? Let’s talk.</h2>
+          <div class="contact-actions" data-reveal>
+            <a class="btn btn-gold btn-lg" href="mailto:nuttaputza123@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
+              nuttaputza123@gmail.com
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="https://github.com/flame123-np" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" /></svg>
+              GitHub
+            </a>
+            <!-- TODO: add a LinkedIn button here once you have the profile URL -->
+          </div>
+          <div class="footer-row">
+            <span>© 2026 Nuttaphat Yuenyong</span>
+            <span>Chachoengsao, Thailand</span>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <a class="to-top" href="#top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5" /><path d="m5 12 7-7 7 7" /></svg>
+    </a>
 
     <script src="script.js"></script>
   </body>
