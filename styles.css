@@ -562,7 +562,7 @@ a.card:hover,
 
 .skill-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -760,6 +760,43 @@ a.card:hover,
 
 .project-card:hover .project-media img {
   transform: scale(1.06);
+}
+
+.more-card {
+  padding: 28px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  min-height: 220px;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--cream-deep);
+  border-style: dashed;
+}
+
+.more-card strong {
+  font-size: 20px;
+}
+
+.more-card > span:last-child {
+  font-weight: 700;
+  color: var(--green-800);
+}
+
+.more-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green-800);
+  color: var(--cream);
+}
+
+.more-icon svg {
+  width: 24px;
+  height: 24px;
 }
 
 .project-body {
@@ -1140,10 +1177,6 @@ a.card:hover,
   .project-grid,
   .cert-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .skill-grid > :last-child {
-    grid-column: 1 / -1;
   }
 }
 

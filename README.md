@@ -22,5 +22,5 @@
 
 ---
 💬 **Contact & Connect**
-* **GitHub:** [flame123-np](https://github.com/flame123-np)
+* **GitHub:** [Catboyz-45](https://github.com/Catboyz-45)
 * **LinkedIn:** [nuttaphat-yuenyong](https://www.linkedin.com/in/nuttaphat-yuenyong)

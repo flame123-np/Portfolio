@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuttaphat Yuenyong — Resume</title>
-    <meta name="description" content="Resume of Nuttaphat Yuenyong, Business, System and Data Analyst Intern candidate, Kasetsart University." />
+    <meta name="description" content="Resume of Nuttaphat Yuenyong, IT intern candidate in systems analysis, data, and web and app development, Kasetsart University." />
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -116,9 +116,9 @@
         background: #fff;
         box-shadow: 0 2px 6px rgba(22, 33, 28, 0.06), 0 24px 48px rgba(22, 33, 28, 0.1);
         border-top: 10px solid var(--green);
-        padding: 40px 56px 44px;
-        font-size: 15px;
-        line-height: 1.45;
+        padding: 36px 52px 36px;
+        font-size: 14px;
+        line-height: 1.42;
         animation: sheet-in 800ms var(--ease-out) both;
       }
 
@@ -167,9 +167,9 @@
 
       section {
         display: grid;
-        grid-template-columns: 124px minmax(0, 1fr);
-        gap: 0 24px;
-        padding-top: 18px;
+        grid-template-columns: 116px minmax(0, 1fr);
+        gap: 0 22px;
+        padding-top: 14px;
       }
 
       h2 {
@@ -186,7 +186,7 @@
       }
 
       .item + .item {
-        margin-top: 12px;
+        margin-top: 8px;
       }
 
       .item-head {
@@ -325,11 +325,11 @@
     <article class="page">
       <header style="--d: 0">
         <h1>Nuttaphat Yuenyong</h1>
-        <p class="role">Business / System / Data Analyst Intern</p>
+        <p class="role">IT Intern — Systems Analysis · Data · Web &amp; App Development</p>
         <p class="contact-line">
           <a href="mailto:nuttaputza123@gmail.com">nuttaputza123@gmail.com</a>
           <span>099-284-4585</span>
-          <a href="https://github.com/flame123-np">github.com/flame123-np</a>
+          <a href="https://github.com/Catboyz-45">github.com/Catboyz-45</a>
           <a href="https://www.linkedin.com/in/nuttaphat-yuenyong">linkedin.com/in/nuttaphat-yuenyong</a>
           <a href="https://flame123-np.github.io/Portfolio/">flame123-np.github.io/Portfolio</a>
           <span>Chachoengsao, Thailand</span>
@@ -339,10 +339,9 @@
       <section style="--d: 1">
         <h2>Profile</h2>
         <p>
-          Information Technology student at Kasetsart University focused on analysis work: gathering and
-          analysing user requirements, modeling processes and data, building dashboards and working closely with
-          development teams.
-          Detail-oriented, responsible and quick to learn.
+          Information Technology student at Kasetsart University (graduating 2026) who turns user needs into
+          systems and data teams can use: requirements and BPMN, Power BI dashboards and data pipelines, through
+          to web and mobile apps. Detail-oriented, responsible, and works well with both users and developers.
         </p>
       </section>
 
@@ -358,28 +357,33 @@
         <h2>Projects</h2>
         <div>
           <div class="item">
-            <div class="item-head"><strong>System Analysis — Restaurant booking system</strong><span>2024</span></div>
+            <div class="item-head"><strong>Nestly — Dormitory management platform</strong><span>Next.js · PostgreSQL</span></div>
             <ul>
-              <li>Gathered requirements and aligned them with stakeholders and the team’s design.</li>
-              <li>Produced the use case diagram and ER diagram for the booking system.</li>
+              <li>Multi-dorm system for rooms, tenants, leases, meter readings, invoices, repairs and chat, with three roles and server-side permission checks (115 API routes).</li>
             </ul>
           </div>
           <div class="item">
-            <div class="item-head"><strong>Data Visualization — Sales dashboard</strong><span>2025</span></div>
+            <div class="item-head"><strong>Thai cost-of-living data pipeline</strong><span>Airflow · Python</span></div>
+            <ul>
+              <li>Pulls millions of rows of provincial CPI from government APIs, scrapes daily retail prices, and trains a model that forecasts next month’s price direction; exports to Power BI.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="item-head"><strong>Restaurant booking system — System analysis</strong><span>2024</span></div>
+            <ul>
+              <li>Gathered requirements with stakeholders and produced the use case and ER diagrams.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="item-head"><strong>Sales dashboard — Power BI</strong><span>2025</span></div>
             <ul>
               <li>Analysed sales data and built dashboards in Excel and Power BI for a team presentation.</li>
             </ul>
           </div>
           <div class="item">
-            <div class="item-head"><strong>Web Cinema — Online ticket booking</strong><span>2025</span></div>
+            <div class="item-head"><strong>ShabuQ and Alcohol Monitor — Mobile &amp; IoT</strong><span>Flutter · ESP32</span></div>
             <ul>
-              <li>Built a booking demo with seat selection, pricing and a mobile-first layout; wrote the project report.</li>
-            </ul>
-          </div>
-          <div class="item">
-            <div class="item-head"><strong>IoT — Alcohol measuring device</strong></div>
-            <ul>
-              <li>Built an IoT device that measures alcohol level as a hardware project.</li>
+              <li>Queue booking app on Flutter + Firebase; ESP32 alcohol sensor streaming over MQTT to a Flutter monitoring app.</li>
             </ul>
           </div>
         </div>
@@ -388,14 +392,16 @@
       <section style="--d: 4">
         <h2>Skills</h2>
         <dl>
-          <dt>Business analysis</dt>
-          <dd>Requirement analysis, documentation, use case &amp; ER diagrams, flowcharts, BPMN</dd>
+          <dt>Systems analysis</dt>
+          <dd>Requirement analysis, use case &amp; ER diagrams, flowcharts, BPMN</dd>
           <dt>Data</dt>
-          <dd>Microsoft Excel, Power BI, SQL</dd>
-          <dt>Tools</dt>
-          <dd>Jira, Trello, GitHub</dd>
+          <dd>SQL, PostgreSQL, Excel, Power BI, Python, Apache Airflow, machine learning</dd>
           <dt>Web</dt>
-          <dd>HTML, CSS, JavaScript, Node.js</dd>
+          <dd>HTML, CSS, JavaScript, TypeScript, React, Next.js, Node.js, Express</dd>
+          <dt>Mobile &amp; IoT</dt>
+          <dd>Flutter, Firebase, ESP32</dd>
+          <dt>DevOps &amp; tools</dt>
+          <dd>Docker, Nginx, Git/GitHub, Jira, Trello</dd>
         </dl>
       </section>
 
