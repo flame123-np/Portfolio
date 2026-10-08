@@ -918,6 +918,12 @@ a.card:hover,
   color: var(--muted);
 }
 
+.timeline .text-link {
+  display: inline;
+  min-height: 0;
+  background-position: 0 100%;
+}
+
 .side-stack {
   display: flex;
   flex-direction: column;
@@ -970,6 +976,7 @@ a.card:hover,
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
   gap: 16px;
 }
 
