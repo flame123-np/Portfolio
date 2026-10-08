@@ -23,3 +23,4 @@
 ---
 💬 **Contact & Connect**
 * **GitHub:** [flame123-np](https://github.com/flame123-np)
+* **LinkedIn:** [nuttaphat-yuenyong](https://www.linkedin.com/in/nuttaphat-yuenyong)
