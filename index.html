@@ -375,70 +375,154 @@
               <h2>Certifications &amp; training</h2>
             </div>
           </div>
-          <div class="cert-layout" data-stagger>
-            <a class="card cert-feature" href="อบรมai.pdf" target="_blank" rel="noopener" data-reveal>
-              <img src="images/cert-ai.jpg" alt="Certificate for the AI and Cybersecurity Skills course" width="480" height="339" loading="lazy" />
-              <span class="cert-feature-body">
-                <span class="kicker">NCSA × Microsoft · Mar 2025</span>
-                <strong>AI &amp; Cybersecurity Skills</strong>
-                <span lang="th" class="th">หลักสูตร เปิดโลกทักษะ AI และความปลอดภัยทางไซเบอร์ (ร่วมกับ Microsoft)</span>
-                <span class="text-link">View certificate ↗</span>
-              </span>
-            </a>
-
-            <article class="card hr-card" data-reveal>
-              <div class="hr-head">
-                <h3>HackerRank skill certificates</h3>
-                <p>10 certificates · Mar 2025 · select a level to verify it</p>
+          <div class="cert-carousel" data-reveal>
+            <div class="cert-controls">
+              <p class="cert-count" aria-live="polite">11 certificates</p>
+              <div class="cert-buttons">
+                <button class="cert-btn" type="button" data-dir="-1" aria-label="Previous certificates">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" /></svg>
+                </button>
+                <button class="cert-btn" type="button" data-dir="1" aria-label="Next certificates">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>
+                </button>
               </div>
-              <ul class="hr-list">
-                <li>
-                  <span class="hr-skill">SQL</span>
-                  <span class="hr-levels">
-                    <a class="level" href="https://www.hackerrank.com/certificates/db57889ee4a3" target="_blank" rel="noopener" aria-label="Verify SQL (Basic) certificate on HackerRank">Basic ↗</a>
-                    <a class="level level-int" href="https://www.hackerrank.com/certificates/7e9e66ba604c" target="_blank" rel="noopener" aria-label="Verify SQL (Intermediate) certificate on HackerRank">Intermediate ↗</a>
-                  </span>
-                </li>
-                <li>
-                  <span class="hr-skill">Python</span>
-                  <span class="hr-levels">
-                    <a class="level" href="https://www.hackerrank.com/certificates/fe87475e85b6" target="_blank" rel="noopener" aria-label="Verify Python (Basic) certificate on HackerRank">Basic ↗</a>
-                  </span>
-                </li>
-                <li>
-                  <span class="hr-skill">JavaScript</span>
-                  <span class="hr-levels">
-                    <a class="level" href="https://www.hackerrank.com/certificates/27699dcb1788" target="_blank" rel="noopener" aria-label="Verify JavaScript (Basic) certificate on HackerRank">Basic ↗</a>
-                    <a class="level level-int" href="https://www.hackerrank.com/certificates/b55aac832346" target="_blank" rel="noopener" aria-label="Verify JavaScript (Intermediate) certificate on HackerRank">Intermediate ↗</a>
-                  </span>
-                </li>
-                <li>
-                  <span class="hr-skill">Node.js</span>
-                  <span class="hr-levels">
-                    <a class="level" href="https://www.hackerrank.com/certificates/e20fbc68e34d" target="_blank" rel="noopener" aria-label="Verify Node.js (Basic) certificate on HackerRank">Basic ↗</a>
-                    <a class="level level-int" href="https://www.hackerrank.com/certificates/b347e137071e" target="_blank" rel="noopener" aria-label="Verify Node.js (Intermediate) certificate on HackerRank">Intermediate ↗</a>
-                  </span>
-                </li>
-                <li>
-                  <span class="hr-skill">Angular</span>
-                  <span class="hr-levels">
-                    <a class="level level-int" href="https://www.hackerrank.com/certificates/b897d0a8d347" target="_blank" rel="noopener" aria-label="Verify Angular (Intermediate) certificate on HackerRank">Intermediate ↗</a>
-                  </span>
-                </li>
-                <li>
-                  <span class="hr-skill">Java</span>
-                  <span class="hr-levels">
-                    <a class="level" href="https://www.hackerrank.com/certificates/c6fc76d8fc4a" target="_blank" rel="noopener" aria-label="Verify Java (Basic) certificate on HackerRank">Basic ↗</a>
-                  </span>
-                </li>
-                <li>
-                  <span class="hr-skill">CSS</span>
-                  <span class="hr-levels">
-                    <a class="level" href="https://www.hackerrank.com/certificates/81c947c89300" target="_blank" rel="noopener" aria-label="Verify CSS (Basic) certificate on HackerRank">Basic ↗</a>
-                  </span>
-                </li>
-              </ul>
-            </article>
+            </div>
+            <ul class="cert-track" tabindex="0" aria-label="Certificates, scroll sideways to see more">
+            <li class="cert-slide">
+              <a class="card cert-slide-link" href="อบรมai.pdf" target="_blank" rel="noopener">
+                <span class="cert-slide-media">
+                <img src="images/cert-ai.jpg" alt="AI &amp; Cybersecurity Skills certificate" width="720" height="509" loading="lazy" />
+                </span>
+                <span class="cert-slide-body">
+                  <span class="cert-badge cert-badge-gold">Training</span>
+                  <strong>AI &amp; Cybersecurity Skills</strong>
+                  <span>NCSA × Microsoft · Mar 2025 · View ↗</span>
+                </span>
+              </a>
+            </li>
+            <li class="cert-slide">
+              <a class="card cert-slide-link" href="https://www.hackerrank.com/certificates/7e9e66ba604c" target="_blank" rel="noopener">
+                <span class="cert-slide-media">
+                <img src="images/cert-sql-intermediate.jpg" alt="SQL (Intermediate) certificate" width="720" height="540" loading="lazy" />
+                </span>
+                <span class="cert-slide-body">
+                  <span class="cert-badge cert-badge-int">Intermediate</span>
+                  <strong>SQL</strong>
+                  <span>HackerRank · Mar 2025 · Verify ↗</span>
+                </span>
+              </a>
+            </li>
+            <li class="cert-slide">
+              <a class="card cert-slide-link" href="https://www.hackerrank.com/certificates/b55aac832346" target="_blank" rel="noopener">
+                <span class="cert-slide-media">
+                <img src="images/cert-javascript-intermediate.jpg" alt="JavaScript (Intermediate) certificate" width="720" height="540" loading="lazy" />
+                </span>
+                <span class="cert-slide-body">
+                  <span class="cert-badge cert-badge-int">Intermediate</span>
+                  <strong>JavaScript</strong>
+                  <span>HackerRank · Mar 2025 · Verify ↗</span>
+                </span>
+              </a>
+            </li>
+            <li class="cert-slide">
+              <a class="card cert-slide-link" href="https://www.hackerrank.com/certificates/b347e137071e" target="_blank" rel="noopener">
+                <span class="cert-slide-media">
+                <img src="images/cert-nodejs-intermediate.jpg" alt="Node.js (Intermediate) certificate" width="720" height="540" loading="lazy" />
+                </span>
+                <span class="cert-slide-body">
+                  <span class="cert-badge cert-badge-int">Intermediate</span>
+                  <strong>Node.js</strong>
+                  <span>HackerRank · Mar 2025 · Verify ↗</span>
+                </span>
+              </a>
+            </li>
+            <li class="cert-slide">
+              <a class="card cert-slide-link" href="https://www.hackerrank.com/certificates/b897d0a8d347" target="_blank" rel="noopener">
+                <span class="cert-slide-media">
+                <!-- TODO: add the Angular (Intermediate) certificate image -->
+                <span class="cert-slide-ph" aria-hidden="true"><strong>Angular</strong><span>Intermediate</span></span>
+                </span>
+                <span class="cert-slide-body">
+                  <span class="cert-badge cert-badge-int">Intermediate</span>
+                  <strong>Angular</strong>
+                  <span>HackerRank · Mar 2025 · Verify ↗</span>
+                </span>
+              </a>
+            </li>
+            <li class="cert-slide">
+              <a class="card cert-slide-link" href="https://www.hackerrank.com/certificates/db57889ee4a3" target="_blank" rel="noopener">
+                <span class="cert-slide-media">
+                <img src="images/cert-sql-basic.jpg" alt="SQL (Basic) certificate" width="720" height="540" loading="lazy" />
+                </span>
+                <span class="cert-slide-body">
+                  <span class="cert-badge">Basic</span>
+                  <strong>SQL</strong>
+                  <span>HackerRank · Mar 2025 · Verify ↗</span>
+                </span>
+              </a>
+            </li>
+            <li class="cert-slide">
+              <a class="card cert-slide-link" href="https://www.hackerrank.com/certificates/27699dcb1788" target="_blank" rel="noopener">
+                <span class="cert-slide-media">
+                <img src="images/cert-javascript-basic.jpg" alt="JavaScript (Basic) certificate" width="720" height="540" loading="lazy" />
+                </span>
+                <span class="cert-slide-body">
+                  <span class="cert-badge">Basic</span>
+                  <strong>JavaScript</strong>
+                  <span>HackerRank · Mar 2025 · Verify ↗</span>
+                </span>
+              </a>
+            </li>
+            <li class="cert-slide">
+              <a class="card cert-slide-link" href="https://www.hackerrank.com/certificates/e20fbc68e34d" target="_blank" rel="noopener">
+                <span class="cert-slide-media">
+                <img src="images/cert-nodejs-basic.jpg" alt="Node.js (Basic) certificate" width="720" height="540" loading="lazy" />
+                </span>
+                <span class="cert-slide-body">
+                  <span class="cert-badge">Basic</span>
+                  <strong>Node.js</strong>
+                  <span>HackerRank · Mar 2025 · Verify ↗</span>
+                </span>
+              </a>
+            </li>
+            <li class="cert-slide">
+              <a class="card cert-slide-link" href="https://www.hackerrank.com/certificates/fe87475e85b6" target="_blank" rel="noopener">
+                <span class="cert-slide-media">
+                <img src="images/cert-python-basic.jpg" alt="Python (Basic) certificate" width="720" height="540" loading="lazy" />
+                </span>
+                <span class="cert-slide-body">
+                  <span class="cert-badge">Basic</span>
+                  <strong>Python</strong>
+                  <span>HackerRank · Mar 2025 · Verify ↗</span>
+                </span>
+              </a>
+            </li>
+            <li class="cert-slide">
+              <a class="card cert-slide-link" href="https://www.hackerrank.com/certificates/c6fc76d8fc4a" target="_blank" rel="noopener">
+                <span class="cert-slide-media">
+                <img src="images/cert-java-basic.jpg" alt="Java (Basic) certificate" width="720" height="540" loading="lazy" />
+                </span>
+                <span class="cert-slide-body">
+                  <span class="cert-badge">Basic</span>
+                  <strong>Java</strong>
+                  <span>HackerRank · Mar 2025 · Verify ↗</span>
+                </span>
+              </a>
+            </li>
+            <li class="cert-slide">
+              <a class="card cert-slide-link" href="https://www.hackerrank.com/certificates/81c947c89300" target="_blank" rel="noopener">
+                <span class="cert-slide-media">
+                <img src="images/cert-css-basic.jpg" alt="CSS (Basic) certificate" width="720" height="540" loading="lazy" />
+                </span>
+                <span class="cert-slide-body">
+                  <span class="cert-badge">Basic</span>
+                  <strong>CSS</strong>
+                  <span>HackerRank · Mar 2025 · Verify ↗</span>
+                </span>
+              </a>
+            </li>
+            </ul>
+            <div class="cert-progress" aria-hidden="true"><span></span></div>
           </div>
         </div>
       </section>

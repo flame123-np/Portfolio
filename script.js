@@ -124,3 +124,45 @@ document.addEventListener('keydown', (event) => {
     menuToggle.focus();
   }
 });
+
+// ---------- Certificate carousel ----------
+
+document.querySelectorAll('.cert-carousel').forEach((carousel) => {
+  const track = carousel.querySelector('.cert-track');
+  const slides = [...track.children];
+  const prev = carousel.querySelector('[data-dir="-1"]');
+  const next = carousel.querySelector('[data-dir="1"]');
+  const count = carousel.querySelector('.cert-count');
+  const bar = carousel.querySelector('.cert-progress');
+
+  function update() {
+    const max = track.scrollWidth - track.clientWidth;
+    const x = track.scrollLeft;
+    prev.disabled = x <= 2;
+    next.disabled = x >= max - 2;
+
+    const slideW = slides[0].getBoundingClientRect().width;
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+    const first = Math.round(x / (slideW + gap)) + 1;
+    const visible = Math.max(1, Math.floor((track.clientWidth + gap) / (slideW + gap)));
+    const last = Math.min(slides.length, first + visible - 1);
+    count.textContent = `${first === last ? first : `${first}–${last}`} of ${slides.length} certificates`;
+
+    const thumb = Math.min(100, (track.clientWidth / track.scrollWidth) * 100);
+    bar.style.setProperty('--thumb', `${thumb}%`);
+    bar.style.setProperty('--offset', max > 0 ? `${(x / max) * ((100 - thumb) / thumb) * 100}%` : '0%');
+  }
+
+  [prev, next].forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const slideW = slides[0].getBoundingClientRect().width;
+      const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      const step = Math.max(1, Math.floor((track.clientWidth + gap) / (slideW + gap))) * (slideW + gap);
+      track.scrollBy({ left: step * Number(btn.dataset.dir), behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+  });
+
+  track.addEventListener('scroll', () => window.requestAnimationFrame(update), { passive: true });
+  window.addEventListener('resize', update);
+  update();
+});
