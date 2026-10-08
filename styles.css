@@ -1288,6 +1288,32 @@ a.card:hover,
     margin-top: 10px;
   }
 
+  .case-media {
+    min-height: 150px;
+  }
+
+  .project-media {
+    height: 140px;
+  }
+
+  .media-placeholder {
+    padding: 20px;
+    gap: 8px;
+  }
+
+  .media-placeholder svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .project-body {
+    padding: 20px;
+  }
+
+  .more-card {
+    min-height: 0;
+  }
+
   .contact-actions .btn {
     width: 100%;
     white-space: normal;
