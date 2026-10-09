@@ -348,17 +348,30 @@ svg {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: 48px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
+  grid-template-areas:
+    "head head"
+    "copy portrait";
+  gap: 24px 64px;
   align-items: end;
   padding-top: clamp(32px, 6vw, 72px);
 }
 
-.hero-copy {
+/* the headline runs the full width, above the copy and the portrait */
+.hero-head {
+  grid-area: head;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-bottom: clamp(40px, 7vw, 96px);
+}
+
+.hero-copy {
+  grid-area: copy;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: clamp(32px, 6vw, 88px);
 }
 
 .eyebrow-pill {
@@ -435,6 +448,7 @@ svg {
 }
 
 .hero-portrait {
+  grid-area: portrait;
   position: relative;
   justify-self: center;
   width: min(100%, 440px);
@@ -1360,6 +1374,10 @@ a.card:hover,
   }
 
   .hero-grid {
+    grid-template-areas:
+      "head"
+      "copy"
+      "portrait";
     gap: 32px;
   }
 
