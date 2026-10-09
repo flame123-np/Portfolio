@@ -348,30 +348,17 @@ svg {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
-  grid-template-areas:
-    "head head"
-    "copy portrait";
-  gap: 24px 64px;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+  gap: 40px;
   align-items: end;
   padding-top: clamp(32px, 6vw, 72px);
 }
 
-/* the headline runs the full width, above the copy and the portrait */
-.hero-head {
-  grid-area: head;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
 .hero-copy {
-  grid-area: copy;
-  align-self: center;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-bottom: clamp(32px, 6vw, 88px);
+  padding-bottom: clamp(40px, 7vw, 96px);
 }
 
 .eyebrow-pill {
@@ -406,7 +393,7 @@ svg {
 .hero-title {
   font-family: "Fraunces", Georgia, serif;
   font-weight: 700;
-  font-size: clamp(40px, 5.4vw, 72px);
+  font-size: clamp(40px, 4.6vw, 62px);
   line-height: 1.05;
   letter-spacing: -0.01em;
   text-wrap: balance;
@@ -448,10 +435,9 @@ svg {
 }
 
 .hero-portrait {
-  grid-area: portrait;
   position: relative;
   justify-self: center;
-  width: min(100%, 440px);
+  width: min(100%, 480px);
   aspect-ratio: 440 / 520;
   border-radius: 220px 220px 0 0;
   background: var(--green-700);
@@ -1374,10 +1360,6 @@ a.card:hover,
   }
 
   .hero-grid {
-    grid-template-areas:
-      "head"
-      "copy"
-      "portrait";
     gap: 32px;
   }
 
